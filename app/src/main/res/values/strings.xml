@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Music</string>
+    <string name="txt_search_for_song">Search for song</string>
+    <string name="no_internet_connection">No internet connection</string>
 </resources>
