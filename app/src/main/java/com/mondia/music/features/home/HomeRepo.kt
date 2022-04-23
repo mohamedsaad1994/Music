@@ -43,7 +43,7 @@ class HomeRepo : BaseRepo() {
                 path = "v2/api/sayt/flat?query=${query}&limit=${limit}",
                 additionalHeaders = mapOf(
                     Pair(
-                        NetworkExecutor.AUTHORIZATION_HEADER_KEY, authorizationToken
+                        NetworkExecutor.AUTHORIZATION_HEADER_KEY, "Bearer $authorizationToken"
                     ),
                     Pair(NetworkExecutor.GATEWAY_HEADER_KEY, BuildConfig.GATEWAYKEY)
                 ), parser = SearchParser()
